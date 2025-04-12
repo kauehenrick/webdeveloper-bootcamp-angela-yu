@@ -1,16 +1,16 @@
 # Requisições HTTP
-- GET: Requisição de recursos
-- POST: Envio de recursos
-- PUT: Substitui os arquivos com o recurso enviado
-- PATCH: Adiciona o recurso enviados aos arquivos
-- DELETE: Deleta os arquivos
+- GET: Requisição de recursos;
+- POST: Envio de recursos;
+- PUT: Substitui os arquivos com o recurso enviado;
+- PATCH: Adiciona o recurso enviados aos arquivos;
+- DELETE: Deleta os arquivos.
  
 # Middlewares
-Utilizados para indermediar a informação entre o cliente e o servidor, realizando algum tipo de tratamento com a mesma.
-- Pré-processamento
-- Autenticação
-- Tratamento de erros
-- Registro (log)
+Utilizados para indermediar a informação entre o cliente e o servidor, realizando algum tipo de tratamento com a mesma:
+- Pré-processamento;
+- Autenticação;
+- Tratamento de erros;
+- Registro (log).
 
 ```js
 //exemplo de middleware customizado.
@@ -22,3 +22,10 @@ const logger = (req, res, next) => {
 
 app.use(logger);
 ```
+
+# EJS
+EJS Tags:
+- <%= %> - Tudo que estiver dentro da tag será considerado uma variável;
+- <% %> - Um código javascript;
+- <%- %> - Um código em HTML;
+- <%- include("header.ejs") %> - Inserir outro arquivo .ejs dentro do documento atual.
